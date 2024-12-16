@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Native Geospatial Platform - Morocco</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .social-icon {
+            transition: all 0.2s ease-in-out;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #6366F1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 h-screen flex items-center">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative container mx-auto px-4">
+            <div class="text-white max-w-3xl">
+                <h1 class="text-6xl font-bold mb-6 leading-tight">Cloud-Native Geospatial Platform</h1>
+                <p class="text-2xl mb-12 leading-relaxed">Exploring Morocco's Geography Through Advanced Data Formats</p>
+                <div class="flex space-x-6">
+                    <a href="#visualizations" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition duration-300">
+                        Explore Maps
+                    </a>
+                    <a href="#team" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transform hover:scale-105 transition duration-300">
+                        Meet the Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visualization Section -->
+    <div id="visualizations" class="container mx-auto px-4 py-24">
+        <h2 class="text-4xl font-bold text-center mb-4 gradient-text">Interactive Visualizations</h2>
+        <p class="text-xl text-gray-600 text-center mb-16">Discover Morocco's geography through different data formats</p>
+        <div class="grid md:grid-cols-3 gap-12">
+            <!-- Zarr Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-blue-500 h-2"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4">Zarr Visualization</h3>
+                    <p class="text-gray-600 mb-6">Climate data visualization using cloud-optimized Zarr format.</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="https://climate-etude-dot-satelit-443618.ew.r.appspot.com/" target="_blank" 
+                           class="bg-blue-500 text-white px-6 py-3 rounded-lg text-center font-semibold hover:bg-blue-600 transition duration-300">
+                            View Map
+                        </a>
+                        <a href="https://github.com/oudaddayassine31/morocco-cloud-mapping" target="_blank" 
+                           class="flex items-center justify-center space-x-2 text-gray-600 hover:text-blue-500">
+                            <i class="fab fa-github text-xl"></i>
+                            <span>View Source Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COG Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-green-500 h-2"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4">Cloud-Optimized GeoTIFF</h3>
+                    <p class="text-gray-600 mb-6">Efficient raster data visualization using COG format.</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="https://mohssinebouhda.github.io/BOUHDAAISSAMOUDA/cog.html" target="_blank" 
+                           class="bg-green-500 text-white px-6 py-3 rounded-lg text-center font-semibold hover:bg-green-600 transition duration-300">
+                            View Map
+                        </a>
+                        <a href="https://github.com/Mohssinebouhda/BOUHDAAISSAMOUDA/blob/main/cog.html" target="_blank" 
+                           class="flex items-center justify-center space-x-2 text-gray-600 hover:text-green-500">
+                            <i class="fab fa-github text-xl"></i>
+                            <span>View Source Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GeoParquet Card -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-purple-500 h-2"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4">GeoParquet Data</h3>
+                    <p class="text-gray-600 mb-6">Vector data visualization using GeoParquet format.</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="https://mohssinebouhda.github.io/BOUHDAAISSAMOUDA/carte.html" target="_blank" 
+                           class="bg-purple-500 text-white px-6 py-3 rounded-lg text-center font-semibold hover:bg-purple-600 transition duration-300">
+                            View Map
+                        </a>
+                        <a href="https://github.com/Mohssinebouhda/BOUHDAAISSAMOUDA/tree/main" target="_blank" 
+                           class="flex items-center justify-center space-x-2 text-gray-600 hover:text-purple-500">
+                            <i class="fab fa-github text-xl"></i>
+                            <span>View Source Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="team" class="bg-gray-100 py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4 gradient-text">Our Team</h2>
+            <p class="text-xl text-gray-600 text-center mb-16">Meet the talented developers behind this project</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- OUDADDA Yassine -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center">
+                    <img src="WhatsApp Image 2024-12-03 at 7.17.28 PM.jpeg" alt="OUDADDA Yassine" 
+                         class="w-40 h-40 rounded-full mx-auto mb-6 object-cover ring-4 ring-blue-500">
+                    <h3 class="text-2xl font-bold mb-2">OUDADDA Yassine</h3>
+                    <div class="flex justify-center space-x-6 mt-6">
+                        <a href="https://github.com/oudaddayassine31" target="_blank" class="social-icon text-gray-600 hover:text-blue-500">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yassine-oudadda-4995581b8/" target="_blank" class="social-icon text-gray-600 hover:text-blue-500">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="tel:0610842841" class="social-icon text-gray-600 hover:text-blue-500">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BOUHDA Mohssine -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center">
+                    <img src="bouhda.jpeg" alt="BOUHDA Mohssine" 
+                         class="w-40 h-40 rounded-full mx-auto mb-6 object-cover ring-4 ring-green-500">
+                    <h3 class="text-2xl font-bold mb-2">BOUHDA Mohssine</h3>
+                    <div class="flex justify-center space-x-6 mt-6">
+                        <a href="https://github.com/Mohssinebouhda" target="_blank" class="social-icon text-gray-600 hover:text-green-500">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mouhssine-bouhda-84a896225/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon text-gray-600 hover:text-blue-500">
+                          <i class="fab fa-linkedin text-2xl"></i>
+                      </a>
+                        <a href="tel:+212628421935" class="social-icon text-gray-600 hover:text-green-500">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SALAH Aissam -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden p-8 text-center">
+                    <img src="aissam.jpeg" alt="SALAH Aissam" 
+                         class="w-40 h-40 rounded-full mx-auto mb-6 object-cover ring-4 ring-purple-500">
+                    <h3 class="text-2xl font-bold mb-2">SALAH Aissam</h3>
+                    <div class="flex justify-center space-x-6 mt-6">
+                        <a href="https://github.com/aissamsalah" target="_blank" class="social-icon text-gray-600 hover:text-purple-500">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="tel:+212658706110" class="social-icon text-gray-600 hover:text-purple-500">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-6">Copyright © 2024 | OUDADDA-YASSINE SALAH-AISSAM BOUHDA-MOHSSINE | Web Mapping Project</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/oudaddayassine31/morocco-cloud-mapping" target="_blank" 
+                   class="social-icon hover:text-blue-400">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
